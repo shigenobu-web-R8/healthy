@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高齢者のための健康アドバイス</title>
+<!-- Googleアナリティクス -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBCN7C4WR8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QBCN7C4WR8');
+  </script>
+
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+               "Yu Gothic", Meiryo, sans-serif;
+  background-color: #f5f7f8;
+  color: #333;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.lead p {
+  text-indent: 0;
+}
+
+.lead {
+  font-size: 1em;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+ul.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.menu li {
+  margin-bottom: 6px;
+}
+
+ul.menu a {
+  display: block;
+  padding: 6px 10px 6px 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #002244;
+  font-size: 0.95em;
+  line-height: 1.6;
+  border-left: 6px solid #006699;
+}
+
+ul.menu a:hover {
+  color: #006699;
+  background: #eef6fa;
+}
+
+.small {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.news-line {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 4px 0;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 40px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.hero{
+position:relative;
+width:100%;
+height:310px;
+overflow:hidden;
+}
+
+.hero-image{
+position:absolute;
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+opacity:0;
+
+transition:opacity 2s;
+}
+
+.hero-image.active{
+opacity:1;
+}
+
+.hero::before{
+content:"";
+
+position:absolute;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.25);
+
+z-index:1;
+}
+
+.hero-text{
+position:absolute;
+
+z-index:2;
+
+color:white;
+
+left:8%;
+top:50%;
+
+transform:translateY(-50%);
+
+text-align:left;
+
+width:80%;
+}
+
+.hero-text h1{
+font-size:2.5rem;
+
+color:white;
+
+text-shadow:
+2px 2px 4px rgba(0,0,0,0.7);
+
+margin-bottom:10px;
+}
+
+.hero-text p{
+font-size:1.5rem;
+
+color:white;
+
+text-shadow:
+1px 1px 3px rgba(0,0,0,0.7);
+}
+
+@media (max-width:600px){
+
+  body{
+    font-size:16px;
+  }
+
+  nav{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  nav a{
+    width:80%;
+    text-align:center;
+  }
+
+  .text-image{
+    flex-direction:column;
+  }
+
+  .text-image img{
+    width:100%;
+  }
+
+  .hero{
+    height:220px;
+  }
+
+  .hero-text{
+    left:5%;
+    width:90%;
+  }
+
+  .hero-text h1{
+    font-size:2rem;
+  }
+
+  .hero-text p{
+    font-size:1rem;
+  }
+
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+<header class="hero">
+
+<img src="header1.jpg" class="hero-image active" alt="リッチな食事と1杯のコーヒー">
+<img src="header2.jpg" class="hero-image" alt="テニスをしよう">
+<img src="header3.jpg" class="hero-image" alt="十分な睡眠を">
+<img src="header4.jpg" class="hero-image" alt="活発な交流を">
+
+<div class="hero-text">
+<h1>高齢者のための健康アドバイス</h1>
+<p>農学部の元教授が提案します！<br>
+「栄養」「運動」「睡眠」「交流」</p>
+</div>
+
+</header>
+
+<p class="small">公開日：2026年3月　｜　最終更新：2026年9月</p>
+
+    <div class="lead">
+      某大学で教授を務めた退官教員が提案する「高齢者のための健康アドバイス」のページです。<br>
+      執筆者自身が日々心がけて実行している健康法をご紹介します。<strong>健康寿命の延伸</strong>に少しでも貢献できれば幸いです。
+    </div>
+    <div class="news-line">【新着情報】：【健康の科学】60) 睡眠と脳の科学｜眠っている間に脳では何が起こっているか</div>
+    <div class="news-line">【新着情報】：【高齢者のための健康アドバイス】61) 眼科の定期検診で分かったこと｜メガネの度数と加齢による視力の変化</div>
+    <p>
+下の各項目をクリック（タップ）すると、詳しい内容をご覧いただけます。<br>
+    また、不定期ですが、新しいテーマをアップします。ご期待ください。
+    </p>
+<h3>【高齢者のための健康アドバイス】</h3>
+<ul class="menu">
+      <li><a href="(1)introduction.html">1） はじめに</a></li>
+      <li><a href="(2)poor_nutrition&frailty.html">2）【シリーズ：フレイル】高齢者のフレイル（虚弱）｜低栄養の改善</a></li>
+      <li><a href="(3)full_but_low_nutrition.html">3）【シリーズ：フレイル】高齢者の栄養不足｜体重減少と体力低下</a></li>
+      <li><a href="(4)mental&social_frailty.html">4）【シリーズ：フレイル】高齢者の心のフレイル｜精神・心理的フレイルと社会交流の減少</a></li>
+      <li><a href="(5)coffee.html">5） コーヒーと健康・長寿｜和食との組み合わせ</a></li>
+      <li><a href="(6)oral_frailty.html">6） オーラルフレイル（口腔機能の虚弱）｜全身のフレイルに進行</a></li>
+      <li><a href="(7)mind.html">7） 病は気から!｜脳と体のつながり</a></li>
+      <li><a href="(8)tennis.html">8）【シリーズ：テニス】テニスは長寿のためのスポーツ [Available in English]</a></li>
+      <li><a href="(9)tennis-dementia.html">9）【シリーズ：テニス】認知症予防とテニス</a></li>
+      <li><a href="(10)muscle-brain.html">10)【シリーズ筋肉】筋肉と脳の関連性｜運動と認知症予防</a></li>
+      <li><a href="(11)myokine_anti_inflammatory.html">11)【シリーズ筋肉】筋肉は全身を守る｜マイオカインの抗炎症作用</a></li>
+      <li><a href="(12)life-style_10.html">12) 今日からできる生活習慣10選</a></li>
+      <li><a href="(13)blood_sugar_spike.html">13) 血糖値スパイク｜脳と筋肉を弱らせる</a></li>
+      <li><a href="(14)eye-health.html">14) 高齢者の「目」｜リスクと対策</a></li>
+      <li><a href="(15)sleep.html">15)【シリーズ睡眠】高齢者の睡眠｜朝早く目が覚める原因と対策</a></li>
+      <li><a href="(16)how_to_get_to_sleep.html">16)【シリーズ睡眠】入眠のコツ｜自然に眠りに入るための方法</a></li>
+      <li><a href="(17)prevention_of_pneumonia.html">17) 【シリーズ肺炎】高齢者の肺炎予防｜口・筋肉・肺を守る</a></li>
+      <li><a href="(18)aspiration_pneumonia.html">18) 【シリーズ肺炎】高齢者の誤嚥性肺炎｜原因と予防</a></li>
+      <li><a href="(19)aging_and_mitochondria.html">19) 老化とエネルギー｜ミトコンドリアを守る</a></li>
+      <li><a href="(20)gut_health_in_older_peaple.html">20) 高齢者の腸内環境｜健康を支える</a></li>
+      <li><a href="(21)frozen_food1.html">21) 【シリーズ冷凍食品】高齢者と冷凍食品｜低栄養を防ぐ方策</a></li>
+      <li><a href="(22)frozen_food2.html">22) 【シリーズ冷凍食品】高齢者と冷凍食品｜おすすめ冷凍食品</a></li>
+      <li><a href="(23)frozen_food3.html">23) 【シリーズ冷凍食品】高齢者と冷凍食品｜賞味期限と栄養価の変化</a></li>
+      <li><a href="(24)blood_pressure1.html">24) 【シリーズ血圧】高齢者の血圧｜上手な付き合い方</a></li>
+      <li><a href="(25)blood_pressure2.html">25) 【シリーズ血圧】高齢者の血圧｜血圧管理の重要性</a></li>
+      <li><a href="(26)blood_pressure3.html">26) 【シリーズ血圧】高齢者の血圧｜早朝高血圧</a></li>
+      <li><a href="(27)maintaining_body_weight.html">27) 【シリーズ体重】高齢者 の体重｜目標は維持</a></li>
+      <li><a href="(28)BMI_to_risk.html">28) 【シリーズ体重】日本人のBMI（肥満指数）｜死亡リスクとの関係（専門的です）</a></li>
+      <li><a href="(29)aging_to_body_temp_control.html">29) 【シリーズ体温】高齢者の体温｜熱中症とヒートショック</a></li>
+      <li><a href="(30)normal_temp_decrease.html">30) 【シリーズ体温】高齢者の体温｜高齢者の平熱は少し低くなる</a></li>
+      <li><a href="(31)aging_to_autonomic_nervous.html">31) 高齢者の自律神経｜パワー低下の理由と対策</a></li>
+      <li><a href="(32)vitaminD_to_bone_immunity_hay_fever.html">32) 高齢者とビタミンD｜転倒・免疫・花粉症のリスク</a></li>
+      <li><a href="(33)breath_during_sleeping_SAS.html">33) 高齢者の呼吸｜睡眠時無呼吸のリスク</a></li>
+      <li><a href="(34)alcohol_risk1.html">34) 【シリーズ：アルコール】高齢者とアルコール｜健康リスクと依存症</a></li>
+      <li><a href="(35)alcohol_risk2.html">35) 【シリーズ：アルコール】高齢者とアルコール｜依存症の機構とGLP-1の可能性</a></li>
+      <li><a href="(36)dehydration_in_elderly.html">36) 【シリーズ水分】高齢者の水分不足｜その理由と対策</a></li>
+<li><a href="(37)frequent_urination_in_elderly.html">37) 【シリーズ水分】高齢者の頻尿｜原因と対策</a></li>
+<li><a href="(38)nutrients_required_in_elderly.html">38) 高齢者に必要な栄養素｜不足しやすい栄養と対策</a></li>
+<li><a href="(39)constipation_in_elderly-1.html">39) 【シリーズ便秘】高齢者の便秘｜原因とリスク</a></li>
+<li><a href="(40)constipation_in_elderly-2.html">40) 【シリーズ便秘】高齢者の便秘｜対策と改善方法</a></li>
+<li><a href="(41)risk_of_dietary_fiber_in_elderly.html">41) 【シリーズ便秘】高齢者の便秘｜食物繊維に関する重要なポイント</a></li>
+<li><a href="(42)diarrhea_in_elderly.html">42) 【シリーズ下痢】高齢者の下痢｜原因・注意点・受診の目安</a></li>
+<li><a href="(43)ischemic_colitis_constipation.html">43) 【シリーズ下痢】高齢者の下痢｜特に虚血性大腸炎</a></li>
+<li><a href="(44)digestive_medicine_and_laxative.html">44) 整腸剤と下剤の違い｜便秘・下痢との上手な付き合い方</a></li>
+<li><a href="(45)benefit_of_casual_chat.html">45) 雑談（会話）は「脳トレ」｜認知トレーニングとして会話の実践</a></li>
+<li><a href="(46)walking_in_elderly.html">46) 高齢者と散歩｜散歩にこだわらなくて良いという考え方</a></li>
+<li><a href="(47)periodontal_disease_to_dementia.html">47) 歯周病と認知症の関係｜口の健康が脳を守る</a></li>
+<li><a href="(48)motivation_in_elderly.html">48) 高齢者のやる気（意欲）の低下｜その原因と対策</a></li>
+<li><a href="(49)sleep_for_professonal.html">49) 高齢者は睡眠が短くなる｜専門的な内容</a></li>
+<li><a href="(61)regular_eye_examination.html">61) 眼科の定期検診で分かったこと｜メガネの度数と加齢による視力の変化（作成準備中）</a></li>
+</ul>
+
+<h3>【健康の科学】</h3>
+<ul class="menu">
+<li><a href="(50)cell-living.html">50) 生命｜秩序を維持し続けること</a></li>
+<li><a href="(51)stress_management.html">51) ストレス｜上手な付き合い方</a></li>
+<li><a href="(52)DNA_damage_and_cancer.html">52) DNA損傷とがん｜その原因と対策</a></li>
+<li><a href="(53)fatigue_and_message_from_your_body.html">53) 疲労感は身体からのメッセージ｜余力を残して生きる健康術</a></li>
+<li><a href="(54)autophagy_and_apoptosis.html">54) 新陳代謝とは｜細胞の掃除と入れ替わりの仕組み</a></li>
+<li><a href="(55)keep_the_brain_healthy.html">55) 脳を健全に保つ｜脳の基本的な役割と健康に保つ秘訣</a></li>
+<li><a href="(56)about_inflammation.html">56) 炎症とは｜急性炎症と慢性炎症</a></li>
+<li><a href="(57)about_muscle.html">57) 筋肉について｜筋肉と若さ、運動と若さ</a></li>
+<li><a href="(58)intestinal_bacteria_and_health.html">58) 腸内細菌と健康｜腸の健康は全身に影響する</a></li>
+<li><a href="(59)delaying_aging.html">59) 老化を遅らせる｜健康寿命を延ばす生活習慣</a></li>
+<li><a href="(60)sleeping_and_brain.html">60) 睡眠と脳の科学｜眠っている間に脳では何が起こっているか（作成準備中）</a></li>
+</ul>
+
+<h3>【注目している栄養成分（化学物質）】</h3>
+<ul class="menu">
+<li><a href="taurine.html">81) タウリン（アミノ酸）｜老化細胞の除去効果（作成準備中）</a></li>
+<li><a href="vitaminC.html">82) ビタミンC｜水溶性の抗酸化剤としての働き（作成準備中）</a></li>
+<li><a href="vitaminD.html">83) ビタミンD｜骨形成以外にも大切な機能がある（作成準備中）</a></li>
+<li><a href="DHA_EPA.html">84) DHA、EPA｜いろいろな健康効果（作成準備中)</a></li>
+<li><a href="protein.html">85) たんぱく質｜体を形作る最重要な栄養素（作成準備中）</a></li>
+</uL>
+
+    <footer>
+      © 高齢者のための健康アドバイス
+    </footer>
+
+  </div>
+
+<script>
+
+const images = document.querySelectorAll('.hero-image');
+
+let current = 0;
+
+setInterval(() => {
+
+images[current].classList.remove('active');
+
+current++;
+
+if(current >= images.length){
+current = 0;
+}
+
+images[current].classList.add('active');
+
+}, 3000);
+
+</script>
+
+</body>
+</html>

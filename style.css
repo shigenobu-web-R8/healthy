@@ -1,0 +1,312 @@
+/* ===== 基本設定 ===== */
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  line-height:1.7;
+  color:#333;
+  margin:0;
+  background:#ffffff;
+}
+
+/* ===== ヘッダー ===== */
+
+header{
+  background: linear-gradient(135deg, #2a5d84, #3f7fb0);
+  color:white;
+  padding:20px 0;
+  text-align:center;
+}
+
+/* 内側の幅調整 */
+
+.header-inner{
+  max-width:800px;
+  margin:auto;
+  padding:0 12px;
+}
+
+/* タイトル */
+
+header h1{
+  margin:0;
+  font-size:1.5em;
+  color:white;
+}
+
+/* ===== 本文コンテナ ===== */
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:12px;
+}
+
+/* ===== 見出し ===== */
+
+h1,h2,h3{
+  color:#2a5d84;
+}
+
+h1{
+  margin-bottom:0.8em;
+}
+
+h2{
+  margin-top:1.8em;
+  margin-bottom:0.5em;
+  font-size:1.3em;
+}
+
+h3{
+  font-size:1.1em;
+  margin-top:1.2em;
+}
+
+/* ===== 段落 ===== */
+
+p{
+  margin-bottom:1em;
+}
+
+/* 文章の最初を1文字下げる */
+.indent{
+  text-indent:1em;
+}
+
+/* ===== 小さめ文字 ===== */
+
+.small{
+  font-size:0.9em;
+  color:#333;
+}
+
+/* ===== トップリンク ===== */
+
+.back-link{
+  margin:10px 0 18px 0;
+}
+
+/* ===== ボックス共通（引き締め） ===== */
+
+.box,
+.note,
+.column{
+  margin:10px 0;
+  border-radius:5px;
+}
+
+/* ボックス 強調*/
+
+.box {
+  background-color: #fff3e0;
+  border: 2px solid #ff9800;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* たまにつかう補足*/
+
+.note {
+  background-color: #f9f9f9;
+  border: 2px solid #999;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* コラム（基本、専門的） */
+
+.column {
+  background-color: #f0f8ff;
+  border: 2px solid #2196F3;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* それぞれのタイトル　*/
+
+.column-title {
+  font-weight: bold;
+  color: #1565c0;
+}
+
+.box-title {
+  font-weight: bold;
+  color: #e65100;
+}
+
+.note-title {
+  font-weight: bold;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* ===== 箇条書き ===== */
+
+ul,ol{
+  padding-left:1.2em;
+}
+
+li{
+  margin-bottom:0.3em;
+}
+
+/* ===== 画像 ===== */
+
+img{
+  max-width:500px;
+  width:100%;
+  height:auto;
+  display:block;
+  margin:16px auto;
+}
+
+/* ===== 図 ===== */
+
+figure{
+  margin:24px auto;
+  text-align:center;
+}
+
+figure img{
+  width:100%;
+  max-width:900px;
+  height:auto;
+}
+
+figcaption{
+  text-align:center;
+  margin-top:6px;
+  color:#333;
+}
+
+/* ===== 区切り線 ===== */
+
+hr.divider{
+  border:none;
+  border-top:1px solid #ccc;
+  margin:2em 0 1em;
+}
+
+/* ===== 表（テーブル） ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.95em;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background-color: #d9ecff;   /* 見出し行の淡い青 */
+    color: #002244;              /* 濃紺の文字 */
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;   /* 偶数行をわずかにグレーに */
+}
+/* ===== 英語版用 ===== */
+
+.language-link{
+  margin:0;
+  text-align:right;
+}
+
+.language-link a{
+  display:inline-block;
+  padding:8px 14px;
+  background:#f0f7ff;
+  border:1px solid #bcd;
+  border-radius:8px;
+  text-decoration:none;
+  color:#003366;
+  font-size:0.95rem;
+}
+
+.language-link a:hover{
+  background:#ddeeff;
+}
+
+.english-link{
+  margin-top:-35px;
+}
+
+/* ===== フッター ===== */
+
+footer{
+  text-align:center;
+  font-size:0.8em;
+  color:#666;
+  margin:30px auto;
+  max-width:900px;
+}
+
+/* ===== スマホ対応 ===== */
+
+@media (max-width:600px){
+
+  body{
+    font-size:16px;
+    line-height:1.8;
+    color: #000;
+  }
+
+  h1{
+    font-size:1.4em;
+  }
+
+  h2{
+    font-size:1.2em;
+  }
+
+  .container{
+    padding:10px;
+  }
+
+  .box,
+  .note,
+  .column{
+    padding:8px;
+    margin:8px 0;
+  }
+}
+/* ここまで既存のCSS */
+
+@media print {
+
+    body {
+        background: #fff;
+        color: #000;
+        font-size: 12pt;
+    }
+
+    header{
+        display:block;
+        background:none;
+        color:#000;
+        border-bottom:2px solid #000;
+        padding:0 0 8pt 0;
+        margin-bottom:12pt;
+    }
+
+    header h1{
+        color:#000;
+        font-size:18pt;
+    }
+
+    nav,
+    footer{
+        display:none;
+    }
+
+}
